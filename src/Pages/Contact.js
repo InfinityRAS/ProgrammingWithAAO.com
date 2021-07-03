@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { HelmetProvider, Helmet } from 'react-helmet-async';
+import "../CSS/contact.css";
+import { Form } from "../Components/Contact/Form";
 
-export const Contact = () => {
+export const Contact = ({ loader }) => {
     return (
-        <div>
-            This is the contact page
-        </div>
+        <>
+            <HelmetProvider>
+                <Helmet>
+                    <title>
+                        Contact Us - ProgrammingWithAAO
+                    </title>
+                </Helmet>
+            </HelmetProvider>
+
+            <Form loader={loader} />
+        </>
     )
 }
