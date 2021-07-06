@@ -32,7 +32,7 @@ export const Header = ({loader}) => {
                         </li>
                         <div id="search-box_div">
                             <li id="searchbox">
-                                <form action="">
+                                <form action="" onSubmit={(e) => {e.preventDefault(); loader()}}>
                                     <input type="search" id="search" placeholder="Type here to search" />
                                 </form>
                             </li>

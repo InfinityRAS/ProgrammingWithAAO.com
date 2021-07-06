@@ -17,40 +17,43 @@ import { Enroll } from "./Pages/Enroll";
 function App() {
   const [progress, setProgress] = useState(0)
   function loader() {
+    // e.preventDefault();
     setProgress(100)
   }
 
   return (
-    <Router>
-      <LoadingBar
-        color='#f11946'
-        progress={progress}
-        onLoaderFinished={() => setProgress(0)}
-      />
+    <>
+      <Router>
+        <LoadingBar
+          color='#f11946'
+          progress={progress}
+          onLoaderFinished={() => setProgress(0)}
+        />
 
-      <Header loader={loader} />
-      <Switch>
-        <Route exact path="/" render={() => {
-          return (
-            <>
-              <Home loader={loader} />
-            </>
-          )
-        }}>
-        </Route>
-        <Route exact path="/contact">
-          <Contact loader={loader} />
-        </Route>
-        <Route exact path="/enroll">
-          <Enroll loader={loader} />
-        </Route>
-        <Route exact path="/courses">
-          <Courses loader={loader} />
-        </Route>
-      </Switch>
-      <About />
-      <Footer />
-    </Router>
+        <Header loader={loader} />
+        <Switch>
+          <Route exact path="/" render={() => {
+            return (
+              <>
+                <Home loader={loader} />
+              </>
+            )
+          }}>
+          </Route>
+          <Route exact path="/courses">
+            <Courses loader={loader} />
+          </Route>
+          <Route exact path="/enroll">
+            <Enroll loader={loader} />
+          </Route>
+          <Route exact path="/contact">
+            <Contact loader={loader} />
+          </Route>
+        </Switch>
+        <About />
+        <Footer />
+      </Router>
+    </>
   );
 }
 
