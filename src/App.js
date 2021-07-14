@@ -29,7 +29,7 @@ function App() {
           color='#f11946'
           progress={progress}
           onLoaderFinished={() => setProgress(0)}
-        />
+     height={2.5}   />
 
         <Header loader={loader} />
         <Switch>
