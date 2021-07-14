@@ -13,6 +13,7 @@ import { Contact } from "./Pages/Contact";
 import LoadingBar from 'react-top-loading-bar';
 import { Courses } from "./Pages/Courses";
 import { Enroll } from "./Pages/Enroll";
+import { NotFound } from "./Pages/NotFound";
 
 function App() {
   const [progress, setProgress] = useState(0)
@@ -48,6 +49,9 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <Contact loader={loader} />
+          </Route>
+          <Route>
+            <NotFound />
           </Route>
         </Switch>
         <About />

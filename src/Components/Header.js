@@ -22,13 +22,13 @@ export const Header = ({loader}) => {
                             <Link id="list_link-1" className="list_links" to="/" onClick={loader}>Home</Link>
                         </li>
                         <li id="list_item-2" className="list_items">
-                            <Link id="list_link-1" className="list_links" to="/courses" onClick={loader}>Browse Video Courses</Link>
+                            <Link id="list_link-2" className="list_links" to="/courses" onClick={loader}>Browse Video Courses</Link>
                         </li>
                         <li id="list_item-3" className="list_items">
-                            <Link id="list_link-1" className="list_links" to="/enroll" onClick={loader}>Enroll Now!</Link>
+                            <Link id="list_link-3" className="list_links" to="/enroll" onClick={loader}>Enroll Now!</Link>
                         </li>
                         <li id="list_item-4" className="list_items">
-                            <Link id="list_link-1" className="list_links" to="/contact" onClick={loader}>Contact Us</Link>
+                            <Link id="list_link-4" className="list_links" to="/contact" onClick={loader}>Contact Us</Link>
                         </li>
                         <div id="search-box_div">
                             <li id="searchbox">

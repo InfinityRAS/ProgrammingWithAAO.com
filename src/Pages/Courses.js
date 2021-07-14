@@ -1,16 +1,14 @@
 import React from 'react'
-import { HelmetProvider, Helmet } from 'react-helmet-async'
+import { Helmet } from 'react-helmet-async'
 
 export const Courses = () => {
     return (
-<>
-        <HelmetProvider>
+        <>
             <Helmet>
                 <title>
-                    Beowse video
+                    Browse video
                 </title>
             </Helmet>
-        </HelmetProvider>
-</>
+        </>
     )
 }
