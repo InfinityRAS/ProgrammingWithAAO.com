@@ -8,7 +8,7 @@ import { Sponsers } from "../Components/Home/Sponsers";
 import { Buttons } from "../Components/Home/Buttons";
 import "../CSS/home.css"
 
-export const Home = ({ loader }) => {
+const Home = ({ loader }) => {
     return (
         <>
             <Helmet>
@@ -25,3 +25,5 @@ export const Home = ({ loader }) => {
         </>
     )
 }
+
+export default Home;

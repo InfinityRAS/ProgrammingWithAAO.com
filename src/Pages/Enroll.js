@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import "../CSS/enroll.css";
 import { Form } from "../Components/Enroll/Form";
 
-export const Enroll = ({ loader }) => {
+const Enroll = ({ loader }) => {
     return (
         <>
             <Helmet>
@@ -14,3 +14,5 @@ export const Enroll = ({ loader }) => {
         </>
     )
 }
+
+export default Enroll;

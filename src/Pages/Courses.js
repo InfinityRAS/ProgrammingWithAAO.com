@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
 
-export const Courses = () => {
+const Courses = () => {
     return (
         <>
             <Helmet>
@@ -12,3 +12,5 @@ export const Courses = () => {
         </>
     )
 }
+
+export default Courses;

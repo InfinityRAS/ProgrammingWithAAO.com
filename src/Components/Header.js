@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-export const Header = ({loader}) => {
+const Header = ({loader}) => {
 
     function ResponsiveNav() {
         const header = document.querySelector('.header');
@@ -30,6 +30,9 @@ export const Header = ({loader}) => {
                         <li id="list_item-4" className="list_items">
                             <Link id="list_link-4" className="list_links" to="/contact" onClick={loader}>Contact Us</Link>
                         </li>
+                        <li id="list_item-5" className="list_items">
+                            <Link id="list_link-5" className="list_links" to="/books" onClick={loader}>Your Books</Link>
+                        </li>
                         <div id="search-box_div">
                             <li id="searchbox">
                                 <form action="" onSubmit={(e) => {e.preventDefault(); loader()}}>
@@ -44,3 +47,5 @@ export const Header = ({loader}) => {
         </header>
     )
 }
+
+export default Header;

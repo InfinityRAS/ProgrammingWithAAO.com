@@ -2,7 +2,7 @@ import React from 'react'
 import "../CSS/notFound.css";
 import { Helmet } from "react-helmet-async";
 
-export const NotFound = () => {
+const NotFound = () => {
     return (
         <>
             <Helmet>
@@ -29,3 +29,5 @@ export const NotFound = () => {
         </>
     )
 }
+
+export default NotFound;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer>
             &copy; 2021-2022 programmingwithaao.com | All Rights Reserved
@@ -10,3 +10,5 @@ export const Footer = () => {
         </footer>
     )
 }
+
+export default Footer;
