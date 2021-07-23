@@ -10,7 +10,7 @@ ReactDOM.render(
       <App />
     </HelmetProvider>
   </React.StrictMode>,
-  document.getElementsByTagName("aryan's-website")[0]
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
