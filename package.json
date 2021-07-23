@@ -2,7 +2,7 @@
   "name": "ProgrammingWithAAO.com",
   "version": "2.3.2",
   "private": true,
-  "hostname": "https://aryansisodiya.github.io/ProgrammingWithAAO.com",
+  "hostname": "https://aryansisodiya.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
