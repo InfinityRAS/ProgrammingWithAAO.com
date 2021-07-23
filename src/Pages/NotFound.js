@@ -1,33 +1,22 @@
-import React from 'react'
-import "../CSS/notFound.css";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet-async"
+import React from 'react';
+import "../CSS/notFound.css"
 
 const NotFound = () => {
     return (
         <>
             <Helmet>
-                <title>
-                    Page not found! : {window.location.href}
-                </title>
+                <title>Error 404! Page Not Found</title>
             </Helmet>
-            <div className="div-adget">
-                <div id="div-adget">
-                    <a href="/">
-                        <img src="Img/logo_circle.ico" alt="programmingwithaao.com" id="logo" />
-                    </a>
-                    <p>
-                        <b>404</b>
-                        <ins>That's an Error</ins>
-                    </p>
-                    <p>
-                        The requested URL ({window.location.href}) was not found on the server
-                        <br />
-                        <ins>That's all we know</ins>
-                    </p>
+            <div id="notfound">
+                <img src="Img/logo_circle.ico" alt="programmingwithaao.com" id="logo" />
+                <div id="div">
+                    <ins>The requested url ({window.location.href}) was not found on the server</ins>
+                    <p>That's all we know</p>
                 </div>
             </div>
         </>
     )
 }
 
-export default NotFound;
+export default NotFound

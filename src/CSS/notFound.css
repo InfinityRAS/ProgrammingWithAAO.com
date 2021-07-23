@@ -1,41 +1,35 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.div-adget {
-  background: #2a3138d1;
+#notfound {
+  background: rgb(206 219 230);
   color: #222;
-  padding: 15px;
   font: 15px/22px arial, sans-serif;
-  height: 100vh;
-  color: white;
-}
-
-.div-adget > * {
-  background: url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;
-  padding-right: 205px;
-}
-
-#div-adget {
-  margin: 7% auto 0;
-  max-width: 600px;
-  min-height: 180px;
-  padding: 30px 0 15px;
+  /* max-width: 600px; */
+  /* min-height: 180px; */
+  padding: 7% auto 0;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 42px;
 }
 
-#div-adget p {
+#notfound #div {
+  margin: 20px 0px;
+  border-bottom: 2px solid #4242c5;
+}
+
+#notfound p {
   margin: 11px 0 22px;
   overflow: hidden;
 }
 
-#div-adget ins {
-  color: #e0d1d1;
+#notfound ins {
+  color: #777;
   text-decoration: none;
 }
 
-#div-adget #logo {
+#notfound #logo {
   height: 156px;
   border: 3px solid #0b0e6b;
   border-radius: 91px;

@@ -7,6 +7,7 @@ import {
 import "./App.css";
 import LoadingBar from 'react-top-loading-bar';
 import Spinner from "./Pages/Spinner"
+import  NotFound  from "./Pages/NotFound";
 // import { About } from "./Components/About";
 const About = lazy(() => import("./Components/About"))
 // import { Footer } from "./Components/Footer";
@@ -21,8 +22,6 @@ const Contact = lazy(() => import("./Pages/Contact"))
 const Courses = lazy(() => import("./Pages/Courses"))
 // import { Enroll } from "./Pages/Enroll";
 const Enroll = lazy(() => import("./Pages/Enroll"))
-// import { NotFound } from "./Pages/NotFound";
-const NotFound = lazy(() => import("./Pages/NotFound"))
 // import { Books } from "./Pages/Books";
 const Books = lazy(() => import("./Pages/Books"))
 

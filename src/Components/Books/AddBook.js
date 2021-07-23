@@ -25,6 +25,7 @@ export const AddBook = ({ loader, addBook }) => {
                 document.getElementById("alert").style.display = "none";
             }, 2500);
         }   else {
+            e.preventDefault()
             addBook(name, author)
         }
 
@@ -49,7 +50,7 @@ export const AddBook = ({ loader, addBook }) => {
                         <input type="text" name="author" id="author" cols="30" rows="10" className="form-control" style={textAreaStyle} value={author} onChange={(e) => setAuthor(e.target.value)} />
                     </div>
                 </div>
-                <button type="submit" className="btn btn-outline-success btn-sm" onClick={loader}>Add Book</button>
+                <button type="submit" className="btn btn-outline-success btn-sm" onClick={(e) => {e.preventDefault(); loader()}}>Add Book</button>
                 <button type="reset" style={btnStyle} onClick={loader} className="btn btn-outline-secondary btn-sm">Reset</button>
             </form>
             <hr />
