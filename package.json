@@ -2,7 +2,6 @@
   "name": "ProgrammingWithAAO.com",
   "version": "2.4.0",
   "private": true,
-  "homepage": "https://aryansisodiya.github.io/ProgrammingWithAAO.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -21,8 +20,6 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
