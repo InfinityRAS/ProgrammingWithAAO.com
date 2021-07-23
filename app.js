@@ -11,9 +11,4 @@ app.get('/*', function (req, res) {
   res.status(200).sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-// app.get("*", (req, res) => {
-//   res.status(404).render(path.join(__dirname, "src/Pages", "notFound.pug"), {url: `http://${hostname}:${port}${req.url}`})
-//   console.log(req.baseUrl)
-// })
-
 app.listen(port, () => console.log(`App is running at http://${hostname}:${port}`));
