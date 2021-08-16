@@ -1,7 +1,7 @@
 
 # ProgrammingWithAAO.com
 
-ProgrammingWithAAO.com is a website that can be used to teach programming and has some useful tools..!!
+ProgrammingWithAAO.com is a free website that can be used to teach programming and has some useful tools..!!
 
 
 ## Getting Started
