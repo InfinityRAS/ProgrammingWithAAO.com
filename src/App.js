@@ -1,13 +1,13 @@
 import React, { useState, lazy, Suspense } from "react";
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
 } from "react-router-dom";
 import "./App.css";
 import LoadingBar from 'react-top-loading-bar';
 import Spinner from "./Pages/Spinner"
-import  NotFound  from "./Pages/NotFound";
+import NotFound from "./Pages/NotFound";
 // import { About } from "./Components/About";
 const About = lazy(() => import("./Components/About"))
 // import { Footer } from "./Components/Footer";
@@ -44,31 +44,14 @@ function App() {
         <Suspense fallback={<Spinner />}>
 
           <Header loader={loader} />
-          <Switch>
-            <Route exact path="/" render={() => {
-              return (
-                <>
-                  <Home loader={loader} />
-                </>
-              )
-            }}>
-            </Route>
-            <Route exact path="/courses">
-              <Courses loader={loader} />
-            </Route>
-            <Route exact path="/enroll">
-              <Enroll loader={loader} />
-            </Route>
-            <Route exact path="/contact">
-              <Contact loader={loader} />
-            </Route>
-            <Route exact path="/books">
-              <Books loader={loader} />
-            </Route>
-            <Route>
-              <NotFound />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route exact path="/" element={<Home loader={loader} />} />
+            <Route exact path="/courses" element={<Courses loader={loader} />} />
+            <Route exact path="/enroll" element={<Enroll loader={loader} />} />
+            <Route exact path="/contact" element={<Contact loader={loader} />} />
+            <Route exact path="/books" element={<Books loader={loader} />} />
+            <Route element={<NotFound />} />
+          </Routes>
           <About />
           <Footer />
         </Suspense>
