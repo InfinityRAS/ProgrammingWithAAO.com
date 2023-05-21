@@ -60,7 +60,7 @@ If it didn't, then go manually to [localhost:3000](http://localhost:3000)
 
 ## Authors
 
-- [@AryanSisodiya](https://www.github.com/AryanSisodiya)
+- [@AryanSisodiya](https://www.github.com/InfinityRAS)
 
   
 ## Contributing
