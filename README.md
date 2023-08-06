@@ -26,12 +26,12 @@ If you don't want to fork or you don't want to create an account on github.. You
 - Run the following command to clone the repo
     - If you've ssh key configured in your pc
         ``` bash
-        git clone git@github.com:AryanSisodiya/ProgrammingWithAAO.com.git
+        git clone git@github.com:InfinityRAS/ProgrammingWithAAO.com.git
         ```
 
     - If you don't have ssh key configured in your pc
         ``` bash
-        git clone https://github.com/AryanSisodiya/ProgrammingWithAAO.com.git
+        git clone https://github.com/Infinity RAS/ProgrammingWithAAO.com.git
         ```
 
 ### Installation
